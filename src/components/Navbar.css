@@ -1,0 +1,121 @@
+.Navbar img {
+  height: 2rem;
+}
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70% !important;
+}
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+  border-bottom: 2px solid #adadad;
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+}
+.btn {
+  padding: 10px 20px;
+  background: var(--brand-color);
+  border-radius: 0.25rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #000;
+}
+.logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-right: 1px solid #adadad;
+}
+.burgerMenu {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+.burgerMenu div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background: #000;
+  border-radius: 3px;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.burgerMenu {
+  cursor: pointer;
+}
+.toggleNav .level1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggleNav .level2 {
+  opacity: 0;
+  transform: translateX(200%);
+}
+.toggleNav .level3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.small {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .navLinks {
+    height: 100vh;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    transform: translateX(150%);
+    transition: all 500ms;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    border-left: 1px solid #adadad;
+    width: 50%;
+    background-color: #fff;
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+  .middle {
+    flex-direction: column;
+  }
+  .Navbar {
+    justify-content: flex-start;
+  }
+  .logo {
+    border: none;
+  }
+  .small {
+    display: block !important;
+  }
+  .Navbar img {
+    display: none;
+  }
+  .burgerMenu div {
+    display: block;
+  }
+  .link {
+    margin-top: 1rem;
+  }
+  .toggle {
+    transform: translateX(0);
+  }
+}

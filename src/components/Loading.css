@@ -1,0 +1,21 @@
+.Loading {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.Loading svg {
+  width: 100px;
+  stroke: #adadad;
+  stroke-linecap: round;
+  fill: none;
+  stroke-width: 7%;
+}
+.Loading svg use {
+  stroke: var(--brand-color);
+  animation: animate 2s linear infinite;
+}
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

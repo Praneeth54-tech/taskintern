@@ -1,0 +1,47 @@
+.Posts {
+  width: 80%;
+  margin: 0 auto;
+}
+.card {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 1rem 1rem;
+  transition: all 500ms;
+  width: 100%;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+h4,
+p {
+  margin: 0;
+}
+.card p span {
+  color: var(--brand-color);
+  margin-left: 0.5rem;
+}
+.infinite-scroll-component {
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.infinite-scroll-component::-webkit-scrollbar {
+  width: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    flex: 0 0 auto;
+    width: 25% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
+}
